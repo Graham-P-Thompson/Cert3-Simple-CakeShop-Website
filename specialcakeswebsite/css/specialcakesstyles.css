@@ -1,0 +1,215 @@
+/*Created by Graham Thompson 09/09/2022*/
+
+@charset "utf-8";
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* pre made classes */
+.burntred {
+	color: #E94D40;
+}
+
+.navyblue {
+	color: #0C243C;
+}
+
+.clearboth {
+    clear: both;
+}
+
+/*start of my CSS*/
+body {
+	font-size: 1em;
+	line-height: 1.3em;
+    font-family: Arial, sans-serif;
+    background-color: floralwhite;
+    color: #E94D40;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+header #logo {
+    float: left;
+    background-color: white;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+header img {
+    height: 80%;
+    width: 80%;
+}
+
+header nav {
+    float: right;
+    margin-top: 1.2em;
+}
+
+ul {
+ margin: 0;
+ padding: 0;
+}
+
+
+header li {
+    float: left;
+    display: inline;
+    padding: 2em;
+}
+
+
+.navi a:link, a:visited { 
+    background-color: white;
+    color: #E94D40;
+    padding: 10px 20px;
+    margin-left: 2px;
+    margin-right: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.navi a:hover {
+    background-color: #0C243C;
+}
+
+#homeMain {
+    color: #E94D40;
+}
+
+/*cakes for sale image gallery*/
+.container, #images {
+    overflow: visible;
+}
+
+.gallary {
+    width: 100%;
+}
+
+.column:hover { /*zoom on hover over pictures*/
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.column {
+    float: left;
+    width: 32.5%;
+    padding: 5px;
+    transition: transform .2s; /*part of the zoom on hover*/
+}
+
+.row::after { /*clears floats after image containers*/
+    content: "";
+    clear: both;
+    display: table;
+}
+/*cakes for sale image gallery end*/
+
+/*table starts*/
+table, th, td {
+    border: 2px solid #0C243C;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+table {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*table ends*/
+
+/* form starts*/
+form {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 2px solid #0C243C;
+    padding: 5px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: white;
+    color: #E94D40;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0C243C;
+}
+/*form ends*/
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #0C243C;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #0C243C;
+    height: 50px;
+}
+
+
+
